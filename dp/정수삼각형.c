@@ -6,6 +6,13 @@ int n;
 int map[500][500];
 int dp[500][500];
 
+int f_max(int a, int b)
+{
+	if(a<b)
+		return (b);
+	else 
+		return (a);
+}
 
 int main(void)
 {
@@ -46,5 +53,14 @@ int main(void)
 	}
 	printf("%d",max);
 
+	//top-down
+	for(int i = n-2; i>=0; i--)
+	{
+		for(int j = 0; j<=i; j++)
+		{
+			map[i][j] += f_max(map[i+1][j],map[i+1][j+1]);
+		}
+	}
+	printf("\n%d",map[0][0]);
 	return (0);
 }
