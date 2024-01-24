@@ -1,3 +1,5 @@
+//[softeer lv.3] https://softeer.ai/practice/6293
+
 #include <stdio.h>
 
 int n;
