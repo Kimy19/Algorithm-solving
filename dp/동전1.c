@@ -1,3 +1,5 @@
+//[백준 2293 동전1] https://www.acmicpc.net/problem/2293
+
 #include <stdio.h>
 
 int n,k;
