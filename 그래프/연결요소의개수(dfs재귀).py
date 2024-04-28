@@ -1,6 +1,7 @@
 #백준 11724
 import sys
 print(sys.getrecursionlimit())
+#파이썬은 재귀의 깊이가 깊어지면 에러 발생 
 sys.setrecursionlimit(10**6)
 
 n,m = map(int,input().split())
