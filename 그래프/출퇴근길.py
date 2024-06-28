@@ -1,5 +1,4 @@
 #softeer
-#강한연결요소
 import sys
 sys.setrecursionlimit(10**6)
 
@@ -21,17 +20,17 @@ def dfs(cur,g,visit):
         dfs(i,g,visit)
         
 visit1 = [0 for _ in range(n+1)]
-visit2 = [0 for _ in range(n+1)]
-visit3 = [0 for _ in range(n+1)]
-visit4 = [0 for _ in range(n+1)]
-
 visit1[t] = 1
 dfs(s,graph,visit1)
 
+visit2 = [0 for _ in range(n+1)]
 visit2[s] = 1
 dfs(t,graph,visit2)
 
+visit3 = [0 for _ in range(n+1)]
 dfs(s,graph_rev,visit3)
+
+visit4 = [0 for _ in range(n+1)]
 dfs(t,graph_rev,visit4)
 
 count = 0
