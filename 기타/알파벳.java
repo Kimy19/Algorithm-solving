@@ -8,6 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         int[] count = new int[26];
+        int[] count = new int['z'-'a'+1];
         for(int i=0; i<s.length(); i++){
             count[s.charAt(i)-'a']++;
         }
